@@ -1,0 +1,109 @@
+h1{
+    margin-top: 0;
+}
+#pirmais-paragrafs {
+    font-size: 40px;
+    margin-top: 0px;
+}
+p{
+    color: hotpink;
+}
+.red {
+    color: lawngreen;
+    font-weight: bold;
+}
+ #header {
+     width: 100%;
+     height: 150px;
+     background-color: orange;
+ }
+ #sidebar {
+     width: 35%;
+     height: 600px;
+     background-color: plum;
+     float: left;
+ }
+ #content {
+     width: 70%;
+     height: 600px;
+     background-color:powderblue;
+     margin-left: 30%;
+ }
+ #footer {
+     width: 100%;
+     height: 100px;
+     background-color:saddlebrown;
+ }
+ li:hover {
+     text-decoration: underline;
+ }
+ .latvija {
+     width:500px
+ }
+ .attēls-1 {
+     width: 60px;
+     position:absolute;
+     top: 120px;
+     left: 200px;
+     transition: opacity 2s, scale 2s, transform 2s;
+ }
+ .attēls-2 {
+     width: 65px;
+     position: absolute;
+     top:180px;
+     left: 380px;
+     transition: top 2s;
+ }
+ .attēls-1:hover{
+     opacity: 0.5;
+     scale: 8;
+     transform: rotate(990deg);
+ }
+ .attēls-2:hover{
+     top: 150px;
+ }
+ .karte {
+     position:relative;
+ }
+ .mario {
+     top: 0px;
+     left: 0px;
+     position:absolute;
+     width: 100px;
+     animation-name: go;
+     animation-duration: 10s;
+ }
+ @keyframes go{
+     from{
+         top: 0px;
+         left: 0px;
+     }
+     25%{
+         top: 10px;
+         left: 500px;
+     }
+     50%{
+top: 200px;
+left: 500px;
+     }
+     75%{
+top: 200px;
+left:0px;
+     }
+     to{
+         top: 100px;
+         left: 20px;
+     }
+ }
+ @media screen and (max-width: 600px){
+     body {
+         background-color:olivedrab;
+     }
+     #sidebar{
+         display: none;
+     }
+     #content{
+         margin-left: 0%;
+         width: 100%;
+     }
+ }
